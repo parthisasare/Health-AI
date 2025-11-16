@@ -10,7 +10,7 @@ from pydantic import BaseModel, Field, ConfigDict
 from typing import List, Dict, Any, Optional
 import uuid
 from datetime import datetime, timezone
-import PyPDF2
+import pypdf
 import io
 import re
 from pinecone import Pinecone, ServerlessSpec
