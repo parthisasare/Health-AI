@@ -80,7 +80,7 @@ class QueryResponse(BaseModel):
 
 def extract_text_from_pdf(pdf_file: bytes) -> tuple[str, int]:
     """Extract text from PDF file"""
-    pdf_reader = PyPDF2.PdfReader(io.BytesIO(pdf_file))
+    pdf_reader = pypdf.PdfReader(io.BytesIO(pdf_file))
     num_pages = len(pdf_reader.pages)
     
     text_by_page = {}
